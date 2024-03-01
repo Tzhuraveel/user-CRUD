@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "start:dev": "rimraf dist && tsc-watch --onSuccess \"npm run watch\"",
+    "start:db": "docker compose -f compose.yaml up --build --detach",
     "watch": "nodemon \"src/app.ts\" --watch \"./src\""
   },
   "keywords": [],
